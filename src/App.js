@@ -6,6 +6,7 @@ import theme from './theme/themeApp';
 import AppNavBar from './components/layouts/AppNavbar';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
+import Register from './components/segurity/Register';
 
 class App extends Component{
   render(){
@@ -16,6 +17,7 @@ class App extends Component{
          <Grid container>
             <Switch>
                 <Route path ="/" exact component = {ProductsList} ></Route>
+                <Route path= "/register" exact component = {Register}></Route>
             </Switch>
          </Grid>
         </MuiThemeProvider>
